@@ -1,6 +1,6 @@
 # VIDEO-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning
 
-This is the official implementation for Video-RTS
+This is the official implementation for Video-RTS, still in-progress. 
 
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://sites.google.com/cs.unc.edu/videorts2025/)  [![arXiv](https://img.shields.io/badge/arXiv-2405.19209-b31b1b.svg)](https://arxiv.org/abs/2507.06485)
 
