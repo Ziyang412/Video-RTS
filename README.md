@@ -2,7 +2,7 @@
 
 This is the official implementation for Video-RTS
 
-[![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://sites.google.com/cs.unc.edu/videorts2025/)  [![arXiv](https://img.shields.io/badge/arXiv-2405.19209-b31b1b.svg)](https://arxiv.org/abs/2405.19209)
+[![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://sites.google.com/cs.unc.edu/videorts2025/)  [![arXiv](https://img.shields.io/badge/arXiv-2405.19209-b31b1b.svg)](https://arxiv.org/abs/2507.06485)
 
 ### Authors: [Ziyang Wang*](https://ziyangw2000.github.io/),  [Jaehong Yoon*](https://jaehong31.github.io/), [Shoubin Yu](https://yui010206.github.io/), [Md Mohaiminul Islam](https://md-mohaiminul.github.io/), [Gedas Bertasius](https://www.gedasbertasius.com/), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
 
