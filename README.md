@@ -44,10 +44,18 @@ pip install .
 ```
 
 ## **Download Dataset**
-Please refer to the official github of each dataset for video downloading. We provide the annotation file in `./src/r1-v/Evaluation` and please refer to the `./src/r1-v/Evaluation/path_coversion.py` to update the video path. 
+Please refer to the official github of each dataset for video downloading. 
+
+For evaluation, we provide the annotation file in `./src/r1-v/Evaluation` and please refer to the `./src/r1-v/Evaluation/path_coversion.py` to update the video path. 
+
+For training, we provided the training data annotation in `./src/training_data` and please refer to the [CG-Bench](https://huggingface.co/datasets/CG-Bench/CG-Bench) repo for video data 
 
 ## **Download Video-RTS model checkpoint**
-We provided the model checkpoint in [Huggingface](https://huggingface.co/Ted412/Video-RTS), noted that the model is only trained on about 2k samples but yield similar performance with the 6k sample training. We provided the training data annotation in `./src/training_data` and use the [Open-R1-Video](https://github.com/Wang-Xiaodong1899/Open-R1-Video) as trainig code. Please refer to the [CG-Bench](https://huggingface.co/datasets/CG-Bench/CG-Bench) repo for video data as well. We will upload the trainig code later. 
+We provided the model checkpoint in [Huggingface](https://huggingface.co/Ted412/Video-RTS), noted that the model is only trained on about 2k samples but yield similar performance with the 6k sample training.
+
+## **Video-RTS Training**
+
+ We use the [Open-R1-Video](https://github.com/Wang-Xiaodong1899/Open-R1-Video) as trainig codebased. We provided our modification files in `./src/training_files` so please replace the exact same files in the original repo. You could also use the [Video-R1](https://github.com/tulerfeng/Video-R1/tree/main) as training codebase, we find the results are similar. 
 
 
 ## **Inference with S2D Video TTS**
