@@ -1,6 +1,6 @@
 # VIDEO-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning
 
-This is the official implementation for Video-RTS, we are still constructing the repo and will soon post the model checkpoint and training pipeline. 
+This is the official implementation for Video-RTS. 
 
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://sites.google.com/cs.unc.edu/videorts2025/)  [![arXiv](https://img.shields.io/badge/arXiv-2507.06485-b31b1b.svg)](https://arxiv.org/abs/2507.06485) [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace%20-cyan.svg)](https://huggingface.co/Ted412/Video-RTS)
 
