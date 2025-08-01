@@ -2,7 +2,7 @@
 
 This is the official implementation for Video-RTS, we are still constructing the repo and will soon post the model checkpoint and training pipeline. 
 
-[![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://sites.google.com/cs.unc.edu/videorts2025/)  [![arXiv](https://img.shields.io/badge/arXiv-2405.19209-b31b1b.svg)](https://arxiv.org/abs/2507.06485)
+[![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://sites.google.com/cs.unc.edu/videorts2025/)  [![arXiv](https://img.shields.io/badge/arXiv-2507.06485-b31b1b.svg)](https://arxiv.org/abs/2507.06485) [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace%20-cyan.svg)](https://huggingface.co/Ted412/Video-RTS)
 
 ### Authors: [Ziyang Wang*](https://ziyangw2000.github.io/),  [Jaehong Yoon*](https://jaehong31.github.io/), [Shoubin Yu](https://yui010206.github.io/), [Md Mohaiminul Islam](https://md-mohaiminul.github.io/), [Gedas Bertasius](https://www.gedasbertasius.com/), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
 
@@ -46,13 +46,17 @@ pip install .
 ## **Download Dataset**
 Please refer to the official github of each dataset for video downloading. We provide the annotation file in `./src/r1-v/Evaluation` and please refer to the `./src/r1-v/Evaluation/path_coversion.py` to update the video path. 
 
+## **Download Video-RTS model checkpoint**
+We provided the model checkpoint in [Huggingface](https://huggingface.co/Ted412/Video-RTS), noted that the model is only trained on about 2k samples but yield similar performance with the 6k sample training. We provided the training data annotation in `./src/training_data` and use the [Open-R1-Video](https://github.com/Wang-Xiaodong1899/Open-R1-Video) as trainig code. Please refer to the [CG-Bench](https://huggingface.co/datasets/CG-Bench/CG-Bench) repo for video data as well. We will upload the trainig code later. 
+
 
 ## **Inference with S2D Video TTS**
 
-Please update the input model / file name / output file in the given bash file. 
+Please update the input model / file name / output file in the given bash file. After running the inference code, please update the json_path in `cal_results_acc.py` to calculate the final video reasoning accuracy. 
 
 ```bash
 bash src/video_rts_eval.sh
+python src/cal_results_acc.py
 ```
 
 

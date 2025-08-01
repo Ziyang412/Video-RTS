@@ -3,7 +3,7 @@ model_paths=(
 )
 
 file_names=(
-    "YOUR_FILE_NAME_HERE"  
+    "YOUR_OUTPUT_FILE_NAME_HERE"  
 )
 
 export DECORD_EOF_RETRY_MAX=100480

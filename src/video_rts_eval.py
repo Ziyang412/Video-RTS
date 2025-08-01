@@ -380,11 +380,19 @@ for dataset_name in ['videoholmes','videommmu', 'lvb', 'mmvu', 'videomme']:
                         
                         # Create input for vLLM with unique sampling parameters for this run
                         run_sampling_params = SamplingParams(
-                            temperature=0.7 + (run_idx * 0.1),  # Vary temperature slightly for each run
-                            top_p=max(0.5, 0.9 - (run_idx * 0.1)),  # Vary top_p slightly for each run
-                            max_tokens=1024,
-                            stop=["</answer>"]  # Add stop token to prevent overgeneration
+                            # raise the ceiling: 0.8 → 1.4 across 5 runs
+                            temperature       = 0.8 + 0.15 * run_idx,
+                            # gradually widen the nucleus (70 % → 95 %)
+                            top_p             = min(0.95, 0.7 + 0.05 * run_idx),
+                            # keep at most the 50 most‑likely tokens in play
+                            top_k             = 50,
+                            # soft repetition penalties (optional but often helpful)
+                            presence_penalty  = 0.4,
+                            frequency_penalty = 0.2,
+                            max_tokens        = 1024,
+                            stop              = ["</answer>"]
                         )
+
                         
                         
                         sample_input = {
